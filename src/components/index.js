@@ -1,0 +1,10 @@
+export { default as NavBar } from "./navbar/Navbar";
+export { default as Header } from "./header/Header";
+export { default as Featured } from "./featured/Featured";
+export { default as Slider } from "./slider/Slider";
+export { default as SearchBox } from "./searchbox/SearchBox";
+export { default as HomeRatingCard } from "./slider/HomeRatingCard";
+export { default as NewsLetterBanner } from "./newsletter/NewsLetterBanner";
+export { default as NewsLetterFooter } from "./newsletter/NewsLetterFooter";
+export { default as Footer } from "./footer/Footer";
+export { default as RecentSearch } from "./recent/RecentSearch";

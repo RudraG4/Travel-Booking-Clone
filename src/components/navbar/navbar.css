@@ -1,0 +1,42 @@
+.nav-bar {
+  background-color: #293462;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container {
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  color: white;
+}
+
+.logo:hover,
+.logo:visited {
+  --bs-link-hover-color: white;
+}
+
+.nav-items {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.nav-btn {
+  border-radius: 0;
+  --bs-btn-bg: white;
+  --bs-btn-line-height: 1;
+}

@@ -1,0 +1,50 @@
+.newsletter-footer {
+  padding: 50px 0px;
+  background-color: #293462;
+  color: #fff;
+}
+
+.newsletter-footer-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.76rem;
+  margin-bottom: 1rem !important;
+  max-width: 50%;
+}
+
+.newsletter-footer-form > input {
+  border-radius: 0 !important;
+  min-width: 250px !important;
+}
+
+.subscribe-btn {
+  --bs-btn-bg: #d61c4e;
+  --bs-btn-color: white;
+  border: 2px solid #d61c4e;
+  border-radius: 0 !important;
+  font-weight: 500;
+  margin: 0;
+  height: 100%;
+}
+
+.subscribe-btn:hover {
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #c51544;
+  --bs-btn-hover-border-color: #c51544;
+}
+
+.subscribe-btn:active {
+  --bs-btn-active-color: white;
+  --bs-btn-active-bg: #c51544;
+  --bs-btn-active-border-color: #c51544;
+}
+
+.subscribe-btn:focus {
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #c51544;
+  --bs-btn-hover-border-color: #c51544;
+  --bs-btn-focus-box-shadow: none;
+}

@@ -1,0 +1,43 @@
+.slider-name {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.slider-city {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  color: #676b6e;
+}
+
+.slider-ratings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.slider-rating {
+  background-color: #293462;
+  padding: 3px;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  color: white;
+  font-weight: 600;
+  min-width: 30px;
+  text-align: center;
+}
+
+.slider-price,
+.review_word {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.review_count {
+  color: #676b6e;
+  font-size: 12px;
+}

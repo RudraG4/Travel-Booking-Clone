@@ -1,0 +1,126 @@
+.s-item {
+  position: relative;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.s-item-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.s-item-img-wrap {
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.s-item-details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 2 0 50%;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.s-item-price-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  width: 185px;
+  border-left: 1px solid #dee2e6;
+  color: #000 !important;
+  background-color: rgba(245 245 245 / 1) !important;
+  padding: 1rem;
+}
+
+.s-item-rating-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 600;
+}
+
+.s-item-rating {
+  background-color: #293462;
+  padding: 3px;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  color: white;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s-item-review {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.s-item-review_word {
+  font-size: 14px;
+  margin: 0;
+}
+
+.s-item-review_count {
+  color: #676b6e;
+  font-size: 12px;
+}
+
+.s-item-star-ratings {
+  display: flex;
+}
+
+.s-item-star-rate {
+  display: inline-block;
+  fill: var(--search-box-primary-bg);
+  margin-left: 2px;
+  margin-right: 0px;
+  height: 12px;
+}
+
+.s-item-star-rate svg {
+  fill: var(--search-box-primary-bg);
+  display: inline-block;
+  height: 100%;
+  width: auto;
+  vertical-align: top;
+}
+
+.s-item-summary {
+  font-size: 14px;
+  color: #343434;
+  margin-bottom: 5px;
+}
+
+.s-item-gray-text {
+  color: rgb(54, 54, 54);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0px;
+}
+
+.s-item-cancellation-policy {
+  font-size: 12px;
+  color: #343434;
+  margin-bottom: 5px;
+}

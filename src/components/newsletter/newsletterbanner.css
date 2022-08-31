@@ -1,0 +1,16 @@
+.newsletter-banner {
+  display: flex !important;
+  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  border-radius: var(--bs-border-radius) !important;
+  padding: 1.5rem 1rem;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.16);
+  max-width: 1024px;
+}
+
+.newsletter-form-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.76rem;
+  margin-bottom: 1rem !important;
+}

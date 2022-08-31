@@ -1,0 +1,41 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #293462;
+  color: #fff;
+}
+
+.header .container-fluid {
+  max-width: 1024px;
+  margin: 20px 0px;
+}
+
+.header-nav-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 0.25rem;
+}
+
+.header-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 50px !important;
+  --bs-btn-bg: transparent;
+  --bs-btn-color: #fff;
+}
+
+.header-nav-item.active {
+  color: #fff;
+  background-color: #434f81;
+}
+
+.header-nav-item:hover:not(.active) {
+  color: #fff;
+  background-color: #434f81;
+  border-color: transparent;
+}

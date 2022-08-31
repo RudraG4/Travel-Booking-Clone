@@ -1,0 +1,132 @@
+:root {
+  --daterange-border: 195, 125, 15;
+  --daterange-primary-text: 0, 0, 0;
+}
+
+.daterange-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 4px;
+  padding: 0;
+}
+
+.daterange-date {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  height: 50px;
+  padding: 0.375rem;
+  visibility: visible;
+}
+
+.daterange-container:hover .daterange-date {
+  border-color: rgba(var(--daterange-border), 1);
+}
+
+.daterange-date-input {
+  padding: 0.375rem;
+  width: 100%;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.daterange-picker {
+  position: absolute;
+  top: 60px;
+  z-index: 1000;
+  -webkit-box-shadow: 0px 2px 16px -2px rgba(194, 194, 194, 1);
+  -moz-box-shadow: 0px 2px 16px -2px rgba(194, 194, 194, 1);
+  box-shadow: 0px 2px 16px -2px rgba(194, 194, 194, 1);
+}
+
+.daterange-picker .rdrDefinedRangesWrapper {
+  display: none !important;
+  width: 0px !important;
+  flex: 0 !important;
+}
+
+.daterange-picker .rdrMonths {
+  flex-direction: column !important;
+}
+
+.daterange-picker span.rdrDateInput:first-child::after {
+  content: "Check-In Date";
+  color: #adb5bd;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.daterange-picker span.rdrDateInput:last-child::after {
+  content: "Check-Out Date";
+  color: #adb5bd;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.daterange-picker .rdrDateDisplayItem input {
+  border-radius: 4px !important;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1px 2px 0 rgb(35 57 66 / 21%);
+  border: 1px solid transparent;
+}
+
+.rdrDateDisplayItemActive input {
+  border-color: rgb(61, 145, 255) !important;
+}
+
+.daterange-picker .rdrDateDisplayItem {
+  border-radius: 4px;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+@media (min-width: 992px) {
+  .daterange-date:first-child::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: rgba(var(--daterange-primary-text), 1);
+    width: 10px;
+    height: 1.5px;
+    margin-left: -5px;
+    z-index: 2;
+  }
+  .daterange-container {
+    flex-wrap: nowrap;
+    gap: 0px;
+  }
+  .daterange-date {
+    width: 50%;
+  }
+  .daterange-date:first-child {
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .daterange-date:last-child {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .daterange-date:last-child .fa-icon {
+    visibility: hidden;
+    width: 0;
+    padding: 0;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 700px) {
+  .daterange-picker .rdrMonths {
+    flex-direction: row !important;
+  }
+}
